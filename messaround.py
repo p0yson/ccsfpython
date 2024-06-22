@@ -1,16 +1,10 @@
-math_score = int(input("SAT math? "))
-math_score = int(input("SAT math? "))
-'''
-verbal_score = int(input("SAT verbal? "))
-gpa = float(input("Overall GPA? "))
-max_gpa = float(input("Max GPA? "))
+def emphasize_n_characters(word, n_chars):
+    str = ''
+    for i in range(len(word)):
+        if i < n_chars:
+            str += word[i] + '!'
+        else:
+            str += word[i]
+    return str
 
-english_score = int(input("ACT English? "))
-a_math_score = int(input("ACT Math? "))
-reading_score = int(input("ACT Reading? "))
-science_score = int(input("ACT Science? "))
-gpa = float(input("Overall GPA? "))
-max_gpa  = float(input("Overall GPA? "))
-'''
-
-print(math_score)
+print(emphasize_n_characters('watermelon', 5))
