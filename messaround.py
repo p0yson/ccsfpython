@@ -1,10 +1,16 @@
-def emphasize_n_characters(word, n_chars):
-    str = ''
-    for i in range(len(word)):
-        if i < n_chars:
-            str += word[i] + '!'
-        else:
-            str += word[i]
-    return str
+def main():
+    pints = []
+    get_pints(pints)
+    #total_pints
+    #average_pints
+    #high_pints
+    #low_pints
 
-print(emphasize_n_characters('watermelon', 5))
+def get_pints(pints):
+    for i in range(7):
+        user_pints = int(input('Enter pints collected: '))
+        pints.append(user_pints)
+
+    return pints
+
+main()
